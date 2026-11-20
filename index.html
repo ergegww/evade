@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVADE 개인정보처리방침</title>
+<style>
+  body{margin:0;background:#f5f5f5;color:#222;font-family:'Noto Sans KR',-apple-system,'Segoe UI',sans-serif;line-height:1.75}
+  main{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+  h1{font-size:28px;letter-spacing:.06em;margin:0 0 6px}
+  .meta{color:#777;font-size:14px;margin-bottom:32px}
+  h2{font-size:18px;margin:34px 0 8px;padding-top:18px;border-top:1px solid #ddd}
+  p,li{font-size:15px}
+  ul{padding-left:22px}
+  table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14px;background:#fff}
+  th,td{border:1px solid #ddd;padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#ececec}
+  .note{background:#fff;border-left:4px solid #9467ff;padding:10px 14px;margin:14px 0;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<h1>EVADE 개인정보처리방침</h1>
+<div class="meta">시행일: 2026년 11월 8일 · 최종 수정일: 2026년 11월 20일 · 운영자: MewgicPixel</div>
+
+<p>MewgicPixel(이하 "운영자")은 모바일/웹 게임 <b>EVADE</b>(이하 "게임")를 제공하며, 이용자의 개인정보를 소중히 여기고 관련 법령을 준수합니다. 본 방침은 게임이 어떤 정보를 어떤 목적으로 처리하는지 설명합니다.</p>
+
+<div class="note">요약: 게임은 회원가입·이름·이메일·전화번호·위치 정보를 요구하지 않으며, Google 계정 로그인 기능도 없습니다. 랭킹 기능을 위해 익명 식별자와 닉네임·최고 기록이 서버에 저장되고, 백업 코드를 만든 경우에만 기기 내 데이터의 사본이 서버에 저장됩니다. 앱에는 Google AdMob SDK가 포함되어 실제 전면·보상형 광고가 표시됩니다.</div>
+
+<h2>1. 수집·처리하는 정보</h2>
+<table>
+<tr><th>구분</th><th>항목</th><th>목적</th><th>저장 위치</th></tr>
+<tr><td>기기 내 저장 데이터</td><td>보유 코인, 보유/선택한 스킨, 옵션(파티클·화면 흔들림·언어), 최고 생존 기록, 플레이 횟수, 광고 노출 횟수, 평점 요청 상태</td><td>게임 진행 상태 유지, 기능 제공</td><td>이용자 기기의 브라우저 저장소(localStorage). 백업 코드를 만들기 전에는 서버로 전송되지 않음</td></tr>
+<tr><td>백업 데이터</td><td>보유 코인, 보유/선택한 스킨, 최고 생존 기록, 닉네임, 옵션, 플레이 횟수 등 기기 내 저장 데이터의 사본</td><td>기기 변경·재설치 후 데이터 복구</td><td>Google Firebase(Realtime Database, backups/{백업 코드}). 이용자가 백업 코드를 만들 때만 저장되며, 코드를 입력하면 복구됨</td></tr>
+<tr><td>랭킹 데이터</td><td>Firebase 익명 로그인으로 생성된 임의의 사용자 ID, 이용자가 직접 입력한 닉네임(최대 12자), 최고 생존 시간(초), 기록 갱신 시각</td><td>전 세계 랭킹 표시</td><td>Google Firebase(Authentication, Realtime Database)</td></tr>
+<tr><td>광고 관련 정보</td><td>IP 주소, Android 광고 ID, 앱 세트 ID,광고 상호작용(앱 실행·탭·영상 시청) 및 진단 정보 등 Google AdMob SDK가 자동 수집하는 정보</td><td>실제 전면·보상형 광고 제공, 성과 측정, 부정 사용 방지</td><td>Google 및 광고 서비스 제공사 (TLS 암호화 전송)</td></tr>
+<tr><td>자동 수집 정보</td><td>IP 주소, 접속 로그, 기기·브라우저 정보</td><td>서비스 제공, 보안, 오류 방지</td><td>Google(Firebase, Google Fonts) 등 서비스 제공사</td></tr>
+</table>
+<p>운영자는 이름, 이메일, 전화번호, 정확한 위치, 연락처, 사진 등 이용자를 직접 식별할 수 있는 정보를 수집하지 않으며, Google 계정 연결이나 소셜 로그인 기능도 제공하지 않습니다. 랭킹·백업은 Firebase 익명 로그인(게스트) 방식으로만 동작합니다.</p>
+
+<h2>2. 이용 목적</h2>
+<ul>
+<li>게임 기능 제공 및 진행 상태 유지</li>
+<li>전 세계 랭킹 집계 및 표시</li>
+<li>백업 코드를 통한 기기 간 게임 데이터 복구</li>
+<li>보상형·전면 광고 제공</li>
+<li>서비스 안정성 확보, 부정 이용 방지 및 오류 개선</li>
+</ul>
+
+<h2>3. 보유 및 이용 기간</h2>
+<ul>
+<li>기기 내 저장 데이터: 이용자가 앱/브라우저 데이터를 삭제하거나 게임을 삭제할 때까지</li>
+<li>백업 데이터: 백업 코드를 만든 시점부터 보관하며, 삭제 요청 시 지체 없이 삭제</li>
+<li>랭킹 데이터: 서비스 운영 기간 동안 보관하며, 삭제 요청 시 지체 없이 삭제</li>
+<li>광고·로그 정보: 각 제공사의 정책에 따름</li>
+</ul>
+
+<h2>4. 제3자 제공 및 처리 위탁</h2>
+<p>운영자는 이용자의 정보를 판매하지 않으며, 법령에 근거한 경우를 제외하고 제3자에게 제공하지 않습니다. 다만 서비스 제공을 위해 아래 사업자의 서비스를 이용합니다.</p>
+<ul>
+<li><b>Google Firebase</b> (Authentication, Realtime Database): 익명 로그인, 랭킹 및 백업 코드 데이터 저장 — <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+<li><b>Google Fonts</b>: 글꼴 로딩 시 이용자의 IP 주소 등이 Google에 전송될 수 있음 — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+<li><b>Google AdMob</b>: 앱에 포함된 SDK가 실제 전면 광고와 보상형 광고(보석 획득)를 제공하며, 광고 제공·성과 측정·분석·부정 사용 방지를 위해 위 광고 관련 정보를 Google 및 광고 서비스 제공자와 처리·공유할 수 있습니다. 자세한 내용은 <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure?hl=ko">Google Mobile Ads SDK 데이터 공개 안내</a>를 확인해 주세요.</li>
+</ul>
+
+<h2>5. 국외 이전</h2>
+<p>Firebase 등 Google 서비스는 해외 서버에서 처리될 수 있으며, 이 경우 랭킹 데이터와 접속 정보가 국외로 이전될 수 있습니다. 이전되는 항목은 위 1항의 정보에 한정되며, 이전 목적은 서비스 제공입니다.</p>
+
+<h2>6. 이용자의 권리</h2>
+<ul>
+<li>기기 내 데이터는 앱 데이터/브라우저 저장소 삭제로 직접 지울 수 있습니다.</li>
+<li>백업 코드를 다시 입력해 다른 기기에서 데이터를 복구할 수 있습니다. 서버에 저장된 백업 데이터의 삭제를 원하시면 아래 연락처로 문의해 주세요. 백업 코드는 이를 아는 사람이 누구나 데이터를 복구할 수 있으므로 공유하지 마세요.</li>
+<li>랭킹 데이터의 열람·삭제를 원하시면 아래 연락처로 문의해 주세요. Firebase 익명 로그인 ID는 기기 단위로 생성되므로 확인을 위해 랭킹에 등록한 닉네임을 알려주셔야 할 수 있습니다.</li>
+<li>기기 설정에서 광고 식별자 초기화 또는 맞춤 광고 제한을 설정할 수 있습니다.</li>
+</ul>
+
+<h2>7. 아동의 개인정보</h2>
+<p>게임은 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다. 아동이 이용하는 경우 광고 제공은 관련 정책에 따라 제한될 수 있으며, 보호자가 아동의 정보가 수집되었다고 판단하는 경우 아래 연락처로 알려주시면 즉시 조치합니다.</p>
+
+<h2>8. 안전성 확보 조치</h2>
+<p>운영자는 Firebase 보안 규칙을 통한 접근 제어, 통신 구간 암호화(HTTPS) 등 합리적인 보호 조치를 적용합니다.</p>
+
+<h2>9. 방침의 변경</h2>
+<p>본 방침이 변경되는 경우 시행일과 함께 본 페이지에 공지합니다.</p>
+
+<h2>10. 문의처</h2>
+<ul>
+<li>운영자: MewgicPixel</li>
+<li>이메일: <b>junstar508@gmail.com</b></li>
+<li>연락처: <b>010-2947-5602</b></li>
+</ul>
+</main>
+</body>
+</html>
