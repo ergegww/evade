@@ -16,6 +16,7 @@
   th,td{border:1px solid #ddd;padding:8px 10px;text-align:left;vertical-align:top}
   th{background:#ececec}
   .note{background:#fff;border-left:4px solid #9467ff;padding:10px 14px;margin:14px 0;font-size:14px}
+  hr{border:0;border-top:1px solid #ccc;margin:48px 0}
 </style>
 </head>
 <body>
@@ -33,7 +34,7 @@
 <tr><td>기기 내 저장 데이터</td><td>보유 코인, 보유/선택한 스킨, 옵션(파티클·화면 흔들림·언어), 최고 생존 기록, 플레이 횟수, 광고 노출 횟수, 평점 요청 상태</td><td>게임 진행 상태 유지, 기능 제공</td><td>이용자 기기의 브라우저 저장소(localStorage). 백업 코드를 만들기 전에는 서버로 전송되지 않음</td></tr>
 <tr><td>백업 데이터</td><td>보유 코인, 보유/선택한 스킨, 최고 생존 기록, 닉네임, 옵션, 플레이 횟수 등 기기 내 저장 데이터의 사본</td><td>기기 변경·재설치 후 데이터 복구</td><td>Google Firebase(Realtime Database, backups/{백업 코드}). 이용자가 백업 코드를 만들 때만 저장되며, 코드를 입력하면 복구됨</td></tr>
 <tr><td>랭킹 데이터</td><td>Firebase 익명 로그인으로 생성된 임의의 사용자 ID, 이용자가 직접 입력한 닉네임(최대 12자), 최고 생존 시간(초), 기록 갱신 시각</td><td>전 세계 랭킹 표시</td><td>Google Firebase(Authentication, Realtime Database)</td></tr>
-<tr><td>광고 관련 정보</td><td>IP 주소, Android 광고 ID, 앱 세트 ID,광고 상호작용(앱 실행·탭·영상 시청) 및 진단 정보 등 Google AdMob SDK가 자동 수집하는 정보</td><td>실제 전면·보상형 광고 제공, 성과 측정, 부정 사용 방지</td><td>Google 및 광고 서비스 제공사 (TLS 암호화 전송)</td></tr>
+<tr><td>광고 관련 정보</td><td>IP 주소, Android 광고 ID, 앱 세트 ID, 광고 상호작용(앱 실행·탭·영상 시청) 및 진단 정보 등 Google AdMob SDK가 자동 수집하는 정보</td><td>실제 전면·보상형 광고 제공, 성과 측정, 부정 사용 방지</td><td>Google 및 광고 서비스 제공사 (TLS 암호화 전송)</td></tr>
 <tr><td>자동 수집 정보</td><td>IP 주소, 접속 로그, 기기·브라우저 정보</td><td>서비스 제공, 보안, 오류 방지</td><td>Google(Firebase, Google Fonts) 등 서비스 제공사</td></tr>
 </table>
 <p>운영자는 이름, 이메일, 전화번호, 정확한 위치, 연락처, 사진 등 이용자를 직접 식별할 수 있는 정보를 수집하지 않으며, Google 계정 연결이나 소셜 로그인 기능도 제공하지 않습니다. 랭킹·백업은 Firebase 익명 로그인(게스트) 방식으로만 동작합니다.</p>
@@ -88,6 +89,150 @@
 <li>운영자: MewgicPixel</li>
 <li>이메일: <b>junstar508@gmail.com</b></li>
 <li>연락처: <b>010-2947-5602</b></li>
+</ul>
+
+<hr>
+
+<h1>EVADE Privacy Policy</h1>
+<div class="meta">Effective date: November 8, 2026 · Last updated: November 20, 2026 · Operator: MewgicPixel</div>
+
+<p>MewgicPixel (hereinafter "the Operator") provides the mobile/web game <b>EVADE</b> (hereinafter "the Game") and respects users' personal information. This policy explains what information the Game processes and for what purposes.</p>
+
+<div class="note">Summary: The Game does not require sign-up, name, email, phone number, or location, and it has no Google account sign-in. An anonymous identifier, nickname, and best record are stored on a server for the ranking feature, and a copy of the device data is stored on the server only if the user creates a backup code. The app includes the Google AdMob SDK and displays real interstitial and rewarded ads.</div>
+
+<h2>1. Information collected and processed</h2>
+<table>
+<tr><th>Category</th><th>Items</th><th>Purpose</th><th>Location</th></tr>
+<tr><td>Data stored on device</td><td>Coins, owned/selected skins, options (particles, screen shake, language), best survival time, play count, ad impression count, rating prompt status</td><td>Maintaining game progress and providing features</td><td>Browser storage (localStorage) on the user's device. Not transmitted to a server until a backup code is created</td></tr>
+<tr><td>Backup data</td><td>Copy of on-device data such as coins, skins, best record, nickname, options, and play count</td><td>Restoring data after device change or reinstall</td><td>Google Firebase (Realtime Database, backups/{backup code}). Stored only when the user creates a backup code, and restored by entering the code</td></tr>
+<tr><td>Ranking data</td><td>Random user ID from Firebase anonymous sign-in, user-entered nickname (up to 12 characters), best survival time (seconds), record update time</td><td>Displaying the global ranking</td><td>Google Firebase (Authentication, Realtime Database)</td></tr>
+<tr><td>Ad-related information</td><td>IP address, Android advertising ID, app set ID, ad interactions (app opens, taps, video views), and diagnostic data automatically collected by the Google AdMob SDK</td><td>Delivering real interstitial and rewarded ads, measuring performance, preventing fraud</td><td>Google and ad service providers (transmitted over TLS)</td></tr>
+<tr><td>Automatically collected information</td><td>IP address, access logs, device and browser information</td><td>Service delivery, security, error prevention</td><td>Service providers such as Google (Firebase, Google Fonts)</td></tr>
+</table>
+<p>The Operator does not collect information that directly identifies users, such as name, email, phone number, precise location, contact details, or photos, and does not offer Google account linking or social login. Ranking and backups work only through Firebase anonymous (guest) sign-in.</p>
+
+<h2>2. Purposes of use</h2>
+<ul>
+<li>Providing game features and maintaining progress</li>
+<li>Aggregating and displaying the global ranking</li>
+<li>Restoring game data across devices via backup codes</li>
+<li>Providing rewarded and interstitial ads</li>
+<li>Ensuring service stability, preventing abuse, and improving errors</li>
+</ul>
+
+<h2>3. Retention period</h2>
+<ul>
+<li>On-device data: until the user deletes app/browser data or uninstalls the game</li>
+<li>Backup data: kept from the time the backup code is created, deleted promptly upon request</li>
+<li>Ranking data: kept while the service operates, deleted promptly upon request</li>
+<li>Ad and log data: according to each provider's policy</li>
+</ul>
+
+<h2>4. Third-party disclosure and processing</h2>
+<p>The Operator does not sell users' information and does not provide it to third parties except as required by law. The following services are used to provide the Game.</p>
+<ul>
+<li><b>Google Firebase</b> (Authentication, Realtime Database): anonymous sign-in, ranking, and backup code storage — <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+<li><b>Google Fonts</b>: IP address and other information may be sent to Google when fonts are loaded — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+<li><b>Google AdMob</b>: The included SDK delivers real interstitial ads and rewarded ads (for gems) and may process and share the ad-related information above with Google and ad providers for ad delivery, measurement, analytics, and fraud prevention. See the <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure?hl=en">Google Mobile Ads SDK data disclosure</a> for details.</li>
+</ul>
+
+<h2>5. International transfer</h2>
+<p>Google services such as Firebase may be processed on overseas servers, in which case ranking data and access information may be transferred abroad. The transferred items are limited to those in Section 1, and the purpose of transfer is service provision.</p>
+
+<h2>6. User rights</h2>
+<ul>
+<li>On-device data can be deleted directly by clearing app/browser data.</li>
+<li>Data can be restored on another device by re-entering the backup code. To request deletion of backup data stored on the server, contact us below. Do not share your backup code, as anyone who knows it can restore the data.</li>
+<li>To request access to or deletion of ranking data, contact us below. Since the Firebase anonymous ID is generated per device, you may need to provide the nickname registered in the ranking.</li>
+<li>You can reset your advertising ID or limit personalized ads in your device settings.</li>
+</ul>
+
+<h2>7. Children's privacy</h2>
+<p>The Game does not intentionally collect personal information from children under 14. Ad delivery may be restricted for children according to applicable policies. If a guardian believes a child's information has been collected, please contact us below and we will take immediate action.</p>
+
+<h2>8. Security measures</h2>
+<p>The Operator applies reasonable safeguards such as access control through Firebase security rules and encrypted communication (HTTPS).</p>
+
+<h2>9. Changes to this policy</h2>
+<p>Any changes to this policy will be posted on this page with the effective date.</p>
+
+<h2>10. Contact</h2>
+<ul>
+<li>Operator: MewgicPixel</li>
+<li>Email: <b>junstar508@gmail.com</b></li>
+<li>Phone: <b>010-2947-5602</b></li>
+</ul>
+
+<hr>
+
+<h1>EVADE プライバシーポリシー</h1>
+<div class="meta">施行日: 2026年11月8日 · 最終更新日: 2026年11月20日 · 運営者: MewgicPixel</div>
+
+<p>MewgicPixel（以下「運営者」）はモバイル/Webゲーム <b>EVADE</b>（以下「ゲーム」）を提供し、利用者の個人情報を大切に扱います。本方針は、ゲームがどのような情報をどの目的で扱うかを説明します。</p>
+
+<div class="note">概要: ゲームは会員登録・氏名・メールアドレス・電話番号・位置情報を要求せず、Googleアカウントログイン機能もありません。ランキング機能のために匿名識別子・ニックネーム・最高記録がサーバーに保存され、バックアップコードを作成した場合のみ端末内のデータのコピーがサーバーに保存されます。アプリにはGoogle AdMob SDKが含まれ、実際の全文広告・報酬型広告が表示されます。</div>
+
+<h2>1. 収集・処理する情報</h2>
+<table>
+<tr><th>区分</th><th>項目</th><th>目的</th><th>保存場所</th></tr>
+<tr><td>端末内に保存されるデータ</td><td>保有コイン、保有/選択したスキン、設定（パーティクル・画面揺れ・言語）、最高生存記録、プレイ回数、広告表示回数、評価依頼状況</td><td>ゲームの進行状況の維持、機能提供</td><td>利用者端末のブラウザ保存領域（localStorage）。バックアップコードを作成するまではサーバーに送信されません</td></tr>
+<tr><td>バックアップデータ</td><td>コイン、スキン、最高記録、ニックネーム、設定、プレイ回数など端末内データのコピー</td><td>端末変更・再インストール後のデータ復元</td><td>Google Firebase（Realtime Database、backups/{バックアップコード}）。利用者がコードを作成したときのみ保存され、コードを入力すると復元されます</td></tr>
+<tr><td>ランキングデータ</td><td>Firebase匿名ログインで生成された識別子、利用者が入力したニックネーム（最大12文字）、最高生存時間（秒）、記録更新時刻</td><td>世界ランキングの表示</td><td>Google Firebase（Authentication、Realtime Database）</td></tr>
+<tr><td>広告関連情報</td><td>IPアドレス、Android広告ID、アプリセットID、広告との操作（アプリ起動・タップ・動画視聴）および診断情報など、Google AdMob SDKが自動収集する情報</td><td>実際の全文・報酬型広告の提供、効果測定、不正利用防止</td><td>Googleおよび広告サービス提供者（TLS暗号化で送信）</td></tr>
+<tr><td>自動収集情報</td><td>IPアドレス、アクセスログ、端末・ブラウザ情報</td><td>サービス提供、セキュリティ、エラー防止</td><td>Google（Firebase、Google Fonts）などのサービス提供者</td></tr>
+</table>
+<p>運営者は、氏名、メールアドレス、電話番号、正確な位置情報、連絡先、写真など利用者を直接特定できる情報を収集せず、Googleアカウント連携やソーシャルログイン機能も提供しません。ランキング・バックアップはFirebase匿名（ゲスト）ログインのみで動作します。</p>
+
+<h2>2. 利用目的</h2>
+<ul>
+<li>ゲーム機能の提供と進行状況の維持</li>
+<li>世界ランキングの集計・表示</li>
+<li>バックアップコードによる端末間のゲームデータ復元</li>
+<li>報酬型・全文広告の提供</li>
+<li>サービスの安定確保、不正利用防止、エラー改善</li>
+</ul>
+
+<h2>3. 保存期間</h2>
+<ul>
+<li>端末内データ: 利用者がアプリ/ブラウザのデータを削除するか、ゲームをアンインストールするまで</li>
+<li>バックアップデータ: バックアップコードを作成した時点から保存し、削除依頼があれば速やかに削除</li>
+<li>ランキングデータ: サービス運営期間中保存し、削除依頼があれば速やかに削除</li>
+<li>広告・ログ情報: 各提供者の方針に従います</li>
+</ul>
+
+<h2>4. 第三者提供および処理委託</h2>
+<p>運営者は利用者の情報を販売せず、法令に基づく場合を除き第三者に提供しません。サービス提供のため、以下のサービスを利用します。</p>
+<ul>
+<li><b>Google Firebase</b>（Authentication、Realtime Database）: 匿名ログイン、ランキング、バックアップコードデータの保存 — <a href="https://firebase.google.com/support/privacy?hl=ja">firebase.google.com/support/privacy</a></li>
+<li><b>Google Fonts</b>: フォント読み込み時にIPアドレスなどがGoogleに送信される場合があります — <a href="https://policies.google.com/privacy?hl=ja">policies.google.com/privacy</a></li>
+<li><b>Google AdMob</b>: アプリに含まれるSDKが実際の全文広告と報酬型広告（ジェム獲得）を提供し、広告提供・効果測定・分析・不正使用防止のため上記の広告関連情報をGoogleおよび広告サービス提供者と処理・共有する場合があります。詳細は<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure?hl=ja">Google Mobile Ads SDK データ公開ガイド</a>をご確認ください。</li>
+</ul>
+
+<h2>5. 国外移転</h2>
+<p>FirebaseなどのGoogleサービスは海外サーバーで処理される場合があり、その場合ランキングデータと接続情報が国外に移転されることがあります。移転される項目は第1項の情報に限定され、移転目的はサービス提供です。</p>
+
+<h2>6. 利用者の権利</h2>
+<ul>
+<li>端末内のデータは、アプリデータ/ブラウザ保存領域の削除で直接消去できます。</li>
+<li>バックアップコードを再入力すると別の端末でデータを復元できます。サーバーに保存されたバックアップデータの削除を希望される場合は下記にご連絡ください。バックアップコードは知る人誰でもデータを復元できるため、共有しないでください。</li>
+<li>ランキングデータの閲覧・削除を希望される場合は下記にご連絡ください。Firebase匿名ログインIDは端末ごとに生成されるため、確認のためランキングに登録したニックネームをお知らせいただく場合があります。</li>
+<li>端末設定で広告識別子をリセットしたり、パーソナライズ広告を制限したりできます。</li>
+</ul>
+
+<h2>7. 子どもの個人情報</h2>
+<p>ゲームは14歳未満の子どもの個人情報を意図的に収集しません。子どもが利用する場合、広告提供は関連方針に従って制限されることがあります。保護者の方が子どもの情報が収集されたと判断された場合は、下記までご連絡ください。直ちに対応いたします。</p>
+
+<h2>8. 安全性の確保</h2>
+<p>運営者は、Firebaseセキュリティルールによるアクセス制御や通信の暗号化（HTTPS）など、合理的な保護措置を適用しています。</p>
+
+<h2>9. 方針の変更</h2>
+<p>本方針が変更された場合は、施行日とともに本ページでお知らせします。</p>
+
+<h2>10. お問い合わせ</h2>
+<ul>
+<li>運営者: MewgicPixel</li>
+<li>メール: <b>junstar508@gmail.com</b></li>
+<li>電話: <b>010-2947-5602</b></li>
 </ul>
 </main>
 </body>
